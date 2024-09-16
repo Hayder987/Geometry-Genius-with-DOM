@@ -41,6 +41,8 @@ for(let item of imgPath){
     btn.innerText = "Calculate";
     btn.addEventListener("click", function(){
         item.func(input1, input2);
+        input1.value = "";
+        input2.value = "";
     });
     btn.classList.add("bg-btn-color","w-full","py-3","px-12","rounded-xl");
     
@@ -52,6 +54,7 @@ for(let item of imgPath){
     div.appendChild(btn);
     
     card.appendChild(div);
+    
 };
 
 
