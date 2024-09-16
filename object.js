@@ -25,7 +25,7 @@ let imgPath = [
            func : function(input1, input2){
            let x = input1.value;
            let y = input2.value;
-           let result = 0.5*x*y;
+           let result = x*y;
            let p1 = document.getElementById("p1");
            p1.innerText = result.toFixed(1);
     }
