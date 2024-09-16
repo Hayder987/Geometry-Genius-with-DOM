@@ -18,11 +18,11 @@ for(let item of imgPath){
     let inputDiv = document.createElement("div");
     inputDiv.classList.add("max-w-full","mx-auto","mb-12","flex","gap-2","md:gap-5");
     let input1 = document.createElement("input");
-    input1.classList.add("w-[40%]","bg-gray-200", "rounded-md","px-3");
+    input1.classList.add("w-[40%]","bg-gray-200", "rounded-md","px-3" ,"py-3");
     input1.type = "number";
     input1.placeholder = "h";
     let input2 = document.createElement("input");
-    input2.classList.add("w-[40%]","bg-gray-200", "rounded-md","px-3");
+    input2.classList.add("w-[40%]","bg-gray-200", "rounded-md","px-3","py-3");
     input2.type = "number";
     input2.placeholder = "b";
 
