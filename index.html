@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- tailwind Css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "header-color": "rgba(16, 144, 216, 0.1)",
+                "border-color" : "rgba(17, 17, 17, 0.1)",
+                "btn-color" : "rgb(16, 144, 216)",
+                "para-text-color": "rgb(65, 65, 65)"
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .inter-font{
+            font-family: "Inter", sans-serif;
+        }
+      </style>
+</head>
+<body class="inter-font container mx-auto px-3 md:px-12">
+   <header class="flex justify-between items-center mt-6 bg-header-color p-5 rounded-xl mb-12">
+     <div class="">
+      <h1 class="text-5xl font-bold mb-2">Interactive</h1>
+      <h3 class="text-2xl text-para-text-color">Geometry Genius</h3>
+     </div>
+     <div class="">
+      <button class="bg-btn-color px-8 py-2 rounded-xl text-white">Blog</button>
+     </div>
+   </header>
+   <main class="">
+    <div class="flex gap-6 w-full">
+        <!--------- input---------------------->
+        <div class="w-3/5 md:w-9/12 ">
+         <div class="card grid grid-cols-1 md:grid-cols-3 gap-6" id="card">
+
+         </div>
+        </div>
+        <!---- output----------------->
+        <div class="w-2/5 md:w-3/12 relative">
+          <div class="card-item flex flex-col h-96 p-12 border-2 border-border-color rounded-xl fixed">
+              <h3 class="text-2xl font-semibold text-center underline mb-12">Area Calculation</h3> 
+              <p class="text-2xl text-center" id="p1"></p>
+          </div>
+        </div>
+    </div>
+
+   </main>
+   <script src="./object.js"></script>
+   <script src="./script.js"></script>
+</body>
+</html>
